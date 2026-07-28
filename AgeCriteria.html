@@ -5,7 +5,13 @@
         function sum(){
             let age = parseInt(prompt("Enter value of a"))
             if (age >=18){
-                alert("You are eligible");
+                let c = confirm("Dp you want to submit your response ?");
+                if (c){
+                    alert("Your Response is submitted");
+                }else{
+                    alert("Thank You!!");
+                    alert("You are Eligible");
+                }
             }else{
                 alert("You are not eligible");
             }
