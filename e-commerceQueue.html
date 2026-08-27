@@ -1,0 +1,44 @@
+<!--An e-commerce company wants to manage product information.
+Each product has a product ID, product name, price, and quantity
+Task: Create a user-defined object in JavaScript that: 
+1) Stores the product details
+2) Has a method to calculate total price
+3) Has a method to update quantitiy 
+4) Displays all product information -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ABES = {
+            productId : 101,
+            productName : "Laptop",
+            price : 50000,
+            quantity : 2,
+
+            totalPrice : function(){
+                let total = this.price * this.quantity;
+                document.write("Total Price is: " + total);
+            },
+
+            updateQuantity : function(newQuantity){
+                this.quantity = newQuantity;
+                document.write("Updated Quantity is: " + this.quantity);
+            },
+
+            displayProductInfo : function(){
+                document.write("Product ID: " + this.productId + "<br>");
+                document.write("Product Name: " + this.productName + "<br>");
+                document.write("Price: " + this.price + "<br>");
+                document.write("Quantity: " + this.quantity + "<br>");
+            }
+        }
+    </script>
+    
+</body>
+</html>
