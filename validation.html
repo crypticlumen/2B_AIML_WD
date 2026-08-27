@@ -1,0 +1,26 @@
+<!--Validation Form in JavaScript-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+</head>
+<body><script>
+    function validateForm() {
+        let n = document.getElementById("name").value;
+        if(n == "" &&(typeof n == "string")) {
+            alert("Name must be filled out");
+            return false;
+        }
+        let e = document.getElementById("email").value;
+        if(e == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+    }
+</script>
+    
+</body>
+</html>
