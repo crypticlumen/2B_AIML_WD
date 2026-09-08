@@ -7,16 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation Form</title>
 </head>
-<body><script>
+<body>
+    <script>
     function validateForm() {
         let n = document.getElementById("name").value;
-        if(n == "" &&(typeof n == "string")) {
+        if(n == "" && (typeof n == "string")) {
             alert("Name must be filled out");
             return false;
         }
         let e = document.getElementById("email").value;
         if(e == "") {
             alert("Email must be filled out");
+            return false;
+        }
+    }
+    function validateForm2(){
+        let p = document.getElementById("password").value;
+        if(p == "") {
+            alert("Password must be filled out");
             return false;
         }
     }

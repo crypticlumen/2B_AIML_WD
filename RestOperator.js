@@ -24,3 +24,4 @@ function add(name, ...value) {
 }
 console.log(add("vikas", 10, 20, 30, 40, 50))
 console.log(add("vikas", 10, 20, 30))
+

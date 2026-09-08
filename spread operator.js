@@ -14,4 +14,4 @@ let input = prompt("Enter numbers separated by spaces:");
 
 let arr = input.split(" ").map(Number);
 
-sum (...arr);   
+sum (...arr);
