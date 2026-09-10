@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    class Student {
+        name;
+        rollno;
+        constructor(name, rollno) {
+            this.name = name;
+            this.rollno = rollno;
+
+            console.log(this.name);
+            console.log(this.rollno);
+        }
+        display() {
+            console.log(this.name);
+            console.log(this.rollno);
+        }
+        static hello() {
+        console.log("Hello Jeeraj");
+        }
+    }
+    let s1 = new Student("Jeeraj", 101);
+    let s2 = new Student("Kartik", 102);
+    s1.display();
+    Student.hello();
+</script>
+
+</body>
+</html>
