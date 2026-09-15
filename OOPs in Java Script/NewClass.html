@@ -2,15 +2,29 @@
 <html>
 <body>
 <script>
-    class Hello {
-        constructor(name) {
-            this.faculty = 'vikas';
-            this.empname = name;
-            console.log(this.empname);
+<!--    class Hello {-->
+<!--        constructor(name) {-->
+<!--            this.faculty = 'vikas';-->
+<!--            this.empname = name;-->
+<!--            console.log(this.empname);-->
+<!--        }-->
+<!--    }-->
+<!--    let h = new Hello('John');-->
+<!--    console.log(h.faculty);-->
+    class student{
+        constructor(Roll, name, year){
+            this.RollNo = Roll;
+            this.Name = name;
+            this.Year = year;
+
+            console.log(this.RollNo);
+            console.log(this.Name);
+            console.log(this.Year);
         }
     }
-    let h = new Hello('John');
-    console.log(h.faculty);
+    let s = new student();
+    let s1 = new student(25, "max", 2029);
+    let s2 = new student(26, "T-rax", "8000BC");
 </script>
 </body>
 </html>
