@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    class Hello{
+        constructor(){
+            console.log("Hello Constructor");
+        }
+    }
+    class Hi extends Hello{
+        constructor(){
+            super();
+            console.log("Hi Constructor");
+        }
+    }
+    let h1 = new Hi();
+</script>
+</body>
+</html>
