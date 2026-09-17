@@ -1,21 +1,48 @@
+<!--Question 1-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
-<script>
-    class Student{
-        static count = 0;
-        constructor(name, marks, roll){
-        this.name = name;
-        this.marks = marks;
-        this.roll = roll;
+    <script>
+        class student{
+            static count = 0;
+            constructor(rollNo, name, marks){
+                this.rollNo = rollNo;
+                this.name = name;
+                this.marks = marks;
+
+                student.count++;
+            }
+            display(){
+                console.log(this.rollNo);
+                console.log(this.name);
+                console.log(this.marks);
+
+                if(this.marks >= 30){
+                    console.log("Pass");
+                }
+                else{
+                    console.log("Fail");
+                }
+            }
         }
-        display(){
-            console.log(this.name)
-            console.log(this.marks)
-            console.log(this.roll)
-        }
-        if(
-    }
-</script>
+
+        let s1 = new student(101, "Ram", 90);
+        let s2 = new student(101, "Bob", 80);
+        let s3 = new student(101, "Alice", 28);
+
+        s1.display();
+        s2.display();
+        s3.display();
+
+        console.log(student.count)
+
+
+
+    </script>
 </body>
 </html>
