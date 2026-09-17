@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function sum(...values){
+let sum = 0;
+for (let i in values){
+sum += values[i];
+}
+console.log(sum);
+};
+let input = prompt("Enter numbers separated by spaces:");
+
+let arr = input.split(" ").map(Number);
+
+sum (...arr);
+</script>
+</body>
+</html>
