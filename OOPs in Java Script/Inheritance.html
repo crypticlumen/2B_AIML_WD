@@ -2,18 +2,31 @@
 <html>
 <body>
 <script>
-    class Hello{
-        constructor(){
-            console.log("Hello Constructor");
+<!--    class Hello{-->
+<!--        constructor(){-->
+<!--            console.log("Hello Constructor");-->
+<!--        }-->
+<!--    }-->
+<!--    class Hi extends Hello{-->
+<!--        constructor(){-->
+<!--            super();-->
+<!--            console.log("Hi Constructor");-->
+<!--        }-->
+<!--    }-->
+<!--    let h1 = new Hi();-->
+    class Hello {
+        info(){
+            console.log("info hello");
         }
     }
-    class Hi extends Hello{
-        constructor(){
-            super();
-            console.log("Hi Constructor");
+    class Hi extends Hello(){
+        info(){
+            super.info();
+            console.log("info Hi");
         }
     }
     let h1 = new Hi();
+    h1.info();
 </script>
 </body>
 </html>
