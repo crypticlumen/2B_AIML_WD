@@ -12,4 +12,3 @@ ud.on(`exit`, (num) => {
 ud.emit(`greet`, `Lewis Hamilton`);
 ud.emit(`exit`,47);
 
-
