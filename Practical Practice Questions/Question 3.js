@@ -1,5 +1,5 @@
 const fs = require('fs')
-fs.writeFile("std.txt","Name: Kaavy",(err)=>{
+fs.writeFile("std.txt","Name: Jeeraj",(err)=>{
     if(err){
         console.log(err)
     } else{
@@ -14,4 +14,3 @@ fs.readFile('std.txt','utf8',(err,data)=>{
         console.log(data)
     }
 })
-̥
